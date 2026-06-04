@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>股癌 Podcast 分析中心</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">股癌 分析中心</a></h1>
+      <span class="header-badge">Assembly AI × Claude</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-hero">
+      <h2>Podcast 分析集數</h2>
+      <div class="meta">
+        <span class="meta-item">自動轉錄 + AI 分析</span>
+        <span class="meta-item">·</span>
+        <span class="meta-item">股癌 Gooaye</span>
+      </div>
+    </div>
+
+    <!-- 集數卡片區：每次新增集數時，在此插入一張 .ep-card -->
+    <div class="ep-grid" id="ep-grid">
+
+      <!-- 範例卡片（有真實 JSON 後替換） -->
+      <a href="ep-demo.html" style="text-decoration:none; color:inherit;">
+        <div class="ep-card">
+          <div class="ep-card-header">
+            <span class="ep-num">EP DEMO</span>
+            <span class="ep-date">2026-06-04</span>
+          </div>
+          <h3>範例集：AI 分析展示</h3>
+          <p>本頁面為範例，展示工作流最終輸出的網頁格式。涵蓋整集摘要、主持人持倉揭露、個股分析與 Q&A 心法四大區塊。</p>
+          <div class="ep-card-footer">
+            <span class="badge badge-bullish">台積電 看多</span>
+            <span class="badge badge-watchful">輝達 觀察</span>
+            <span class="badge badge-bearish">某族群 看空</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── 新集數插入點 ──
+           格式：
+           <a href="ep-XXX.html" style="text-decoration:none; color:inherit;">
+             <div class="ep-card">
+               <div class="ep-card-header">
+                 <span class="ep-num">EP XXX</span>
+                 <span class="ep-date">YYYY-MM-DD</span>
+               </div>
+               <h3>[集數標題]</h3>
+               <p>[summary 前 120 字]</p>
+               <div class="ep-card-footer">
+                 [股票 badge ...]
+               </div>
+             </div>
+           </a>
+      -->
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      逐字稿由 Assembly AI 自動生成，分析由 Claude 產出，僅供個人研究參考，不構成投資建議。
+    </div>
+  </footer>
+
+</body>
+</html>
