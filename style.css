@@ -5,25 +5,25 @@
 }
 
 :root {
-  --bg-primary: #0d1117;
-  --bg-secondary: #161b22;
-  --bg-card: #1c2128;
-  --border: #30363d;
-  --text-primary: #e6edf3;
-  --text-secondary: #8b949e;
-  --text-muted: #6e7681;
-  --accent: #58a6ff;
-  --accent-hover: #79b8ff;
-  --bullish: #3fb950;
-  --bullish-bg: #0f2f1a;
-  --watchful: #d29922;
-  --watchful-bg: #2f2100;
-  --neutral: #8b949e;
-  --neutral-bg: #21262d;
-  --bearish: #f85149;
-  --bearish-bg: #2f1018;
-  --disclosure-accent: #bc8cff;
-  --disclosure-bg: #1e1528;
+  --bg-primary: #fdf8f0;
+  --bg-secondary: #f5ede0;
+  --bg-card: #fffcf5;
+  --border: #e2d3be;
+  --text-primary: #2c2010;
+  --text-secondary: #6b5040;
+  --text-muted: #9c8272;
+  --accent: #b06030;
+  --accent-hover: #8f4a1f;
+  --bullish: #1e7a3a;
+  --bullish-bg: #e8f5ed;
+  --watchful: #b07800;
+  --watchful-bg: #fef8e0;
+  --neutral: #7a6b5a;
+  --neutral-bg: #ede8e0;
+  --bearish: #c0392b;
+  --bearish-bg: #fce8e6;
+  --disclosure-accent: #7c52b4;
+  --disclosure-bg: #f3edfb;
 }
 
 body {
@@ -277,7 +277,7 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--disclosure-accent);
-  background: rgba(188, 140, 255, 0.1);
+  background: rgba(124, 82, 180, 0.08);
   border-radius: 4px;
   padding: 2px 8px;
 }
@@ -333,7 +333,7 @@ a:hover {
 .host-owned-dot {
   font-size: 0.72rem;
   color: var(--disclosure-accent);
-  background: rgba(188, 140, 255, 0.1);
+  background: rgba(124, 82, 180, 0.08);
   border-radius: 4px;
   padding: 2px 7px;
 }
@@ -386,8 +386,8 @@ a:hover {
   margin-bottom: 4px;
 }
 .qa-takeaway {
-  background: rgba(88, 166, 255, 0.08);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  background: rgba(176, 96, 48, 0.07);
+  border: 1px solid rgba(176, 96, 48, 0.25);
   border-radius: 6px;
   padding: 10px 14px;
   font-size: 0.84rem;
