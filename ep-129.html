@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>股癌 EP129 分析｜股癌 分析中心</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .news-list { display:flex; flex-direction:column; gap:12px; }
+    .news-card { background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:16px 20px; }
+    .news-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; gap:12px; flex-wrap:wrap; }
+    .news-title { font-size:0.9rem; font-weight:600; color:var(--text-primary); }
+    .news-meta { font-size:0.78rem; color:var(--text-muted); white-space:nowrap; }
+    .news-event { font-size:0.875rem; color:var(--text-secondary); line-height:1.7; margin-bottom:6px; }
+    .news-opinion { font-size:0.84rem; color:var(--accent-hover); font-style:italic; margin:0; }
+    .news-domain-badge { display:inline-block; font-size:0.72rem; font-weight:600; background:var(--bg-secondary); border:1px solid var(--border); border-radius:4px; padding:2px 8px; color:var(--text-secondary); margin-bottom:8px; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">股癌 分析中心</a></h1>
+      <span class="header-badge">Assembly AI × Claude</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="back-nav">
+      <a href="index.html">← 返回集數列表</a>
+    </div>
+
+    <div class="page-hero">
+      <h2>EP129</h2>
+      <div class="meta">
+        <span class="meta-item">2026-07-02</span>
+        <span class="meta-item">·</span>
+        <span class="meta-item">轉錄信心分數：94%</span>
+        <span class="meta-item">·</span><span class="meta-item">美光科技 Micron Technology、EXA（前身Metaphor）、Parallel（前Twitter CEO Parag创立）</span>
+      </div>
+    </div>
+
+    <nav class="section-nav">
+      <ul>
+        <li><a href="#summary" class="active">整集摘要</a></li>
+        <li><a href="#news">今日新聞</a></li>
+        <li><a href="#disclosure">持倉揭露</a></li>
+        <li><a href="#stocks">個股分析</a></li>
+        <li><a href="#qa">Q&amp;A 心法</a></li>
+      </ul>
+    </nav>
+
+    <section class="section-block" id="summary">
+      <h2><span class="section-icon">📋</span> 整集摘要</h2>
+      <div class="summary-text">本集節目以輕鬆閒聊的方式開場，主持人先分享近期生活高潮起伏的心境，並聊到面對不確定性時各自的應對哲學——一位主持人習慣直奔最糟結局再往回推備案，另一位則反思自己是否屬於「蠅頭小利派」，在這個每天千點震盪的市場裡愈來愈難保持平靜。
+
+話題自然帶到近期最受關注的美光財報。主持人表示，美光執行長在財報中直接宣稱記憶體產業即將從周期性資產「徹底轉變」，這番說法搭配X上大量AI資訊文的鋪陳，讓人感受到這一波的敘事力道與2023、2024年截然不同。主持人坦言自己既沒有持有美光、也沒有持有閃迪，面對記憶體漲價又買不起Steam Machine、Apple與Switch相繼漲價，形成「雙重剝削」——既無資本利得，又在實體上被再剝削一筆，心情相當不爽。
+
+從記憶體的供需延伸，主持人討論到AI Agent時代的到來才是這波記憶體需求爆炸的核心邏輯：人類使用有上限，但Agent可以無限複製，唯一的限制是SSD與RAM的產能，因此這次需求的性質與以往消費性電子周期截然不同。主持人認為，若Agent時代為真，整個AI搜尋的技術棧將發生根本性改變，並以此引入本集主要研究主題——AI Search的新創生態。
+
+主持人將AI搜尋的技術鏈拆解為五層：爬蟲、索引（Indexing）、查詢（Query）、輸出生成（含Grounding防幻覺）、以及Agent編排（Orchestration）。他指出，當搜尋的主要使用者從人類轉變為AI Agent，每一層的需求都將徹底改寫，由此產生大量被顛覆與創新的空間，也是這批新創估值快速攀升的核心論據。
+
+接著主持人逐一介紹四個落點的代表公司：
+
+第一，做Web Indexing的EXA（前身Metaphor，2021年成立，YC出身，2024年改名）。EXA採用「next link prediction」語義索引模型，建立在超過5,000億個URL的神經語言索引上，目前服務逾40萬名開發者與5,000家企業，客戶包含Cursor、Cognition、HubSpot等AI原生公司。融資歷程：2021年種子輪500萬美元→2024年7月Series A 1,700萬（Lightspeed領投）→2025年9月Series B 8,500萬（Benchmark領投，估值7億）→2026年5月Series C 2.5億（a16z領投，估值飆至22億）。
+
+第二，同樣做Indexing但特別聚焦Deep Research的Parallel，由前Twitter CEO Parag Agrawal離職後創立。Parallel在BrowseComp基準測試的UltraX子項目得分58%，遠高於ChatGPT-4o的38%及EXA Research的14%，API設計圍繞搜尋、閱讀、評估、再查詢等研究流程。融資：2024年種子輪3,000萬（Coatue、Index等投）→2024年11月Series A 1億（Clayton Perkins、Index，估值7.4億）→2025年4月Series B 紅杉領投1億（估值20億）。
+
+第三，工具層的Tavily，起源於2023年5月的開源專案GPT Researcher，累積超過2.5萬GitHub Stars、6,000名活躍開發者。融資：2024年7月種子輪500萬→2025年8月Series A 2,000萬（Inside Partner領投）→2026年2月被Nebius Group以2.75億美元收購，若達業績里程碑上限可達4億。主持人認為工具層生存空間相對有限，各大模型廠自建工具速度只會越來越快。
+
+第四，企業知識圖譜的Glean（2019年創立），提供超過100種資料連接器，整合人事、表單、Email等內部資料源，2024年ARR突破1億美元，2025年達2億美元，融資累計逾7億美元，估值72億美元，PS約36倍。主持人補充另一家U.com（2020年創立），原本做消費端搜尋入口，後轉型企業端，最新C輪估值約15億美元。
+
+最後主持人分享個人判斷：工具層（Tavily類）潛力有限；面向C端的Perplexity類雖然想像空間大，但左右都是Google、Anthropic、ChatGPT等怪物，且高度依賴上游供應商，生存壓力最大；他最看好的是自建Web Index（EXA、Parallel方向），理由有四：Agent搜尋量將呈指數級成長、索引具備資料飛輪護城河、市場過度集中於Google與Bing帶來替代需求、以及為機器任務重新設計的差異化索引可能開啟全新品類。
+
+主持人也分享了對整個VC生態的「暴論」：認為現在頂尖VC投資新創，部分邏輯是假設OpenAI、Anthropic最終IPO會帶整個生態上太空，這些新創打包後股票換股票賣給大廠，形成一條閉環的利益鏈，使得當前估值飆升有其結構性支撐。節目尾聲主持人自嘲，正是因為沒有買美光，才有這麼多時間研究這些新創題目。</div>
+    </section>
+    
+    <section class="section-block" id="news">
+      <h2><span class="section-icon">📰</span> 今日新聞整理</h2>
+      <div class="news-list"><div class="news-card"><div class="news-header"><span class="news-title">美光財報宣稱記憶體產業進入典範轉移</span><span class="news-meta">約35分鐘 分鐘</span></div><span class="news-domain-badge">半導體</span><p class="news-event">美光執行長在最新財報中直接宣稱，記憶體即將從周期性資產「徹底轉變」，財報前後X平台大量文章鋪陳相關敘事。主持人原本期待看到巨大miss或下修，結果不只beat，措辭底氣十足，甚至主持人認為其直接點名挑戰競爭對手。</p><p class="news-opinion">主持人坦言既未持有美光也未持有閃迪，面對記憶體漲價形成雙重剝削（無資本利得又被實體漲價剝削），心情極為不爽。認為這次敘事層級已從軟體應用延伸至硬體供需結構，感受到真實的典範轉移正在發生。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">AI Agent時代驅動記憶體需求結構性改變</span><span class="news-meta">約40分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">主持人分析，人類使用AI有時間與次數上限，但Agent可無限複製，一個人可同時部署成千上萬個Agent，唯一限制是SSD與RAM產能不足。Agent數量的爆炸性成長使記憶體需求性質與以往消費性電子周期截然不同，是此波硬體需求的核心邏輯。</p><p class="news-opinion">主持人認為Agent時代若為真，記憶體市場規模想像空間遠超過去，且這次是結構性而非周期性需求，對整個硬體供應鏈的影響是真實的典範轉移。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">AI Search新創生態：五層技術棧拆解</span><span class="news-meta">約50分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">主持人將AI搜尋技術鏈拆解為爬蟲、索引、查詢、輸出生成（含Grounding）、Agent編排五層，指出當搜尋主體從人類轉為AI Agent，每一層需求都將徹底改寫，由此產生大量創新空間，也是新創估值快速攀升的核心論據。</p><p class="news-opinion">主持人認為2026年談AI Search與2023、2024年截然不同，前者討論的是人如何用AI搜尋，現在討論的是Agent如何自主搜尋，技術需求、格式、速度與量都完全不同，值得重點關注。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">EXA：以Next Link Prediction重建Web Index</span><span class="news-meta">約55分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">EXA（前身Metaphor）2021年成立、YC出身，2024年改名。採用next link prediction語義索引模型，建立在超過5,000億個URL的神經語言索引上，服務逾40萬開發者與5,000家企業，客戶含Cursor、Cognition、HubSpot。融資歷程：種子500萬→Series A 1,700萬（Lightspeed）→Series B 8,500萬（Benchmark，估值7億）→2026年5月Series C 2.5億（a16z，估值22億）。</p><p class="news-opinion">主持人認為EXA的索引方式有差異化技術基礎，且已進入實際服務流程，搭配Agent時代的搜尋量爆炸，Web Index是他最看好的落點，upside最大。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">Parallel：前Twitter CEO創立的Deep Research Index</span><span class="news-meta">約65分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">Parallel由前Twitter CEO Parag Agrawal於2024年離職後創立，專注適合Deep Research的Indexing，BrowseComp基準UltraX子項目得分58%，遠高於ChatGPT-4o的38%及EXA Research的14%。API設計圍繞搜尋、閱讀、評估、再查詢流程。融資：種子3,000萬（Coatue/Index）→Series A 1億（估值7.4億）→2025年4月Series B紅杉領投1億（估值20億）。</p><p class="news-opinion">主持人認為Parallel的豪門血脉（前Twitter CEO）與Deep Research的差異化定位使其值得關注，紅杉在後期大筆押注的策略也引發主持人好奇，想追蹤其最終表現。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">Tavily：開源工具層被Nebius Group收購</span><span class="news-meta">約72分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">Tavily起源於2023年5月開源專案GPT Researcher，累積2.5萬GitHub Stars、6,000名活躍開發者。融資：2024年種子500萬→2025年Series A 2,000萬（Inside Partner）→2026年2月被Nebius Group以2.75億美元收購，達業績里程碑上限可達4億美元。</p><p class="news-opinion">主持人認為工具層生存空間相對有限，各大模型廠自建工具速度只會越來越快，Tavily的收購案反映的是大廠為搶時間而付出溢價，對新創而言是一種快速退出路徑，但並不代表工具層本身能長期存活。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">Glean：企業知識圖譜的最成熟玩家</span><span class="news-meta">約78分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">Glean 2019年創立，提供超過100種資料連接器，整合企業內部人事、表單、Email等資料源建立知識圖譜，2024年ARR突破1億美元，2025年達2億美元，累計融資逾7億美元，估值72億美元，PS約36倍。另有U.com（2020年創立）由消費端搜尋轉型企業端，最新估值約15億美元。</p><p class="news-opinion">主持人認為企業知識圖譜是真實需求，Glean商業化最成熟，但PS 36倍在當前市場氛圍中反而顯得「務實」，對比其他新創動輒百倍PS，反映市場估值體系已完全改變。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">AI Search各落點競爭格局與主持人最終判斷</span><span class="news-meta">約82分鐘 分鐘</span></div><span class="news-domain-badge">AI</span><p class="news-event">主持人以排除法分析四個落點：工具層（Tavily類）易被取代；C端入口（Perplexity類）雖想像空間大但面對Google/Anthropic/ChatGPT競爭壓力最大且高度依賴上游；企業知識圖譜（Glean類）商業模式清晰但成長空間相對有限；Web Index（EXA/Parallel類）受益Agent搜尋量爆炸、具資料飛輪護城河、市場去中心化需求強烈，且可能開啟全新品類。</p><p class="news-opinion">主持人最看好自建Web Index方向，認為Agent時代搜尋量將呈指數成長，市場過度集中於Google與Bing帶來替代需求，加上為機器任務差異化設計的索引可能成為全新基礎設施服務，商業模式想像空間遠超廣告模式，是當前AI新創中upside最大的賽道。</p></div>
+<div class="news-card"><div class="news-header"><span class="news-title">頂尖VC投資邏輯：OpenAI IPO帶整個生態上太空</span><span class="news-meta">約60分鐘 分鐘</span></div><span class="news-domain-badge">美股</span><p class="news-event">主持人提出「暴論」：當前頂尖VC（如a16z、Benchmark、Sequoia）投資AI新創的部分邏輯，是假設OpenAI、Anthropic最終IPO將帶動整個生態，這些新創打包後以股票換股票賣給大廠，形成閉環利益鏈。同時觀察到創辦人高度集中來自OpenAI、Anthropic、DeepMind等機構，形成「近親繁殖」的lineage生態。</p><p class="news-opinion">主持人認為這使當前估值飆升有其結構性支撐，並非純粹泡沫，VC的capital allocation彈性因此更大，但也坦言這些都是「超不專業暴論」，提醒聽眾自行判斷。</p></div></div>
+    </section>
+
+    <section class="section-block" id="disclosure">
+      <h2><span class="section-icon">💼</span> 主持人持倉揭露</h2>
+      <div class="disclosure-list">
+        <div class="disclosure-card"><div class="ticker-row"><span class="disclosure-ticker">美光/Micron</span><span class="disclosure-action">未持有</span></div><blockquote>「我既没有买闪迪，也没有买美光，所以我就已经很不爽了」</blockquote></div>
+<div class="disclosure-card"><div class="ticker-row"><span class="disclosure-ticker">闪迪/SanDisk</span><span class="disclosure-action">未持有</span></div><blockquote>「我既没有买闪迪，也没有买美光，所以我就已经很不爽了」</blockquote></div>
+<div class="disclosure-card"><div class="ticker-row"><span class="disclosure-ticker">美光/Micron</span><span class="disclosure-action">未持有</span></div><blockquote>「我就是因为不懂才没有买美光。没事，好，以上就是本节目。那如果你没有买美光的话」</blockquote></div>
+      </div>
+    </section>
+
+    <section class="section-block" id="stocks">
+      <h2><span class="section-icon">📊</span> 個股 / 族群分析</h2>
+      <div class="stock-grid">
+        <div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">MU</span></div><span class="badge badge-bullish">看多</span></div><p class="stock-analysis">美光财报不只是beat预期，管理层直接宣称记忆体产业即将从周期性资产彻底转变为结构性需求。主持人认为这是一个paradigm shift的信号，过去记忆体跟随消费性电子周期运作，但AI agent时代带来的记忆体需求是截然不同的量级。AI agent数量可无限扩展，每次reasoning都需要大量KV cache记忆体，全球产能跟不上需求增速。管理层底气十足，主持人认为这次叙事转变的可信度远高于过去几波炒作。主持人坦言因未持有而感到双重剥削：既没赚到资本利得，又要在消费端承受涨价压力。</p><span class="stock-risk">主持人未持有，属于情绪性评论；管理层乐观展望是否为period end shift仍有待验证；若AI agent普及速度不如预期则需求端假设崩塌</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">EXA（前身Metaphor）</span></div><span class="badge badge-bullish">看多</span></div><p class="stock-analysis">EXA是一家专注于Web Index的AI搜寻基础设施新创，2021年成立于YC，2024年改名。核心技术差异在于next link prediction，用类连接行为训练搜寻模型，建立在超过5000亿URL的神经语言语义索引上。已服务超过40万名开发者与5000家企业，客户包含Cursor、Cognition、HubSpot、OpenRouter、Monday.com等AI原生公司。融资历程：2021年种子轮500万美元，2024年7月Lightspeed领投1700万美元A轮，2025年9月Benchmark领投8500万美元B轮估值7亿美元，2026年5月ACCZS领投2.5亿美元C轮估值直接喷至22亿美元。主持人认为随着AI agent时代来临，Web Index将成为基础设施服务，市场想象空间与变现逻辑截然不同于人类搜寻时代。</p><span class="stock-risk">Google与Bing关闭索引入口可能反制；自建index成本极高且需时间积累；data flywheel护城河并非坚不可摧如Google反垄断案所示</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">Parallel（前Twitter CEO Parag创立）</span></div><span class="badge badge-bullish">看多</span></div><p class="stock-analysis">Parallel由前Twitter CEO Parag Agrawal离职后创立，专注于适合Deep Research的高质量Indexing Database。在BrowseComp指标UltraX子项得分高达58%，远超ChatGPT-5的38%与EXA Research功能的14%。产品围绕research任务设计多支API，涵盖搜寻、阅读、评估、再次查询等流程。融资历程：2024年种子轮3000万美元由Coatue与Index等投资，2024年11月Clayton Perkins与Index加入A轮1亿美元估值7.4亿，2026年4月红杉领投1亿美元B轮估值20亿。豪门血脉加持，前Twitter核心人脉与VC圈高度重叠。</p><span class="stock-risk">高度专注deep research可能限制市场广度；估值快速拉升与商业化进度是否匹配存疑；红杉是否惯于在后期大笔押注策略是否奏效仍不明</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">Tavily</span></div><span class="badge badge-neutral">中立</span></div><p class="stock-analysis">Tavily起源于2023年5月发布的开源项目GPT Researcher，是最早提出Deep Research工作流概念的开源方案之一，累积超过25000个GitHub stars与6000名活跃开发者。定位为AI搜寻工具箱，将爬取、清理、分块、结构化等繁琐环节打包为开发者可直接调用的工具集。2024年7月完成500万美元融资，2025年8月Inside Partner投入2000万美元A轮，2026年2月被Nebius Group以2.75亿美元收购，若达成业绩里程碑上限可至4亿美元。主持人认为工具层生存空间相对有限，因为大厂自己生产工具的速度越来越快，但此案例证明工具层也能被快速并购变现。</p><span class="stock-risk">工具层最容易被大厂内化取代；Cohere等大模型持续自动化engineering工具生产；收购价值主要来自团队与社群而非技术护城河</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">Perplexity AI</span></div><span class="badge badge-watchful">觀察</span></div><p class="stock-analysis">Perplexity被主持人定位为AI搜寻消费者入口的代表，是面向C端用户能见度最高的搜寻引擎界面。潜在价值极高，一旦成为用户第一时间打开的界面，可衍生AI购物等无限想象空间。但主持人认为其面临两大结构性压力：一是左邻右舍都是怪物，Google、Anthropic、ChatGPT持续强化自身界面争夺入口；二是margin高度依赖外部supplier，需付费购买index与connector，成本结构受制于他人。主持人坦言潜在价值高但现阶段不敢赌。</p><span class="stock-risk">与Google、ChatGPT、Anthropic直接竞争入口位置；margin受制于上游index与connector供应商；品牌recognition与资金规模难与科技巨头抗衡</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">Glean</span></div><span class="badge badge-watchful">觀察</span></div><p class="stock-analysis">Glean成立于2019年，是企业内部知识图谱搜寻领域最成熟的公司，提供超过100种connector接入各类生产力软体、人事系统、工单系统等。员工可在统一平台上自选资料水管后自行vibe code专属小应用。2024年ARR突破1亿美元，2025年达2亿美元。目前融资约7亿多美元，估值72亿美元，PS约36倍。主持人认为在当前市场氛围下PS三十几倍反而显得务实，与其他新创百倍估值相比算稳健。微软也开始高度关注企业工作流叙事，可能产生竞争压力。</p><span class="stock-risk">微软Copilot等大厂直接切入企业知识图谱赛道；估值72亿对应2亿ARR仍属高估值；企业采购决策周期长，compliance要求复杂</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">You.com</span></div><span class="badge badge-neutral">中立</span></div><p class="stock-analysis">You.com成立于2020年，最初定位为面向消费者的新搜寻入口，是最早挑战Google的AI搜寻新创之一。后因与Google、Perplexity竞争压力过大而进行pivot，转向企业专用搜寻服务。将过去开发的多模型路由、即时网页搜寻API、研究工具等资产打包卖给企业与开发者。目前融资近2亿美元，最新C轮估值约15亿美元。主持人认为相较于其他新创估值算相对稳健，但与头部玩家差距明显。</p><span class="stock-risk">pivot后定位仍不够清晰；在企业搜寻赛道面临Glean等专注玩家竞争；原有to C资产转型to B的用户迁移成本与说服力待验证</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">NBIS</span></div><span class="badge badge-watchful">觀察</span></div><p class="stock-analysis">Nebius Group以2.75亿美元收购Tavily，初始对价加业绩里程碑上限可达4亿美元。主持人认为此举逻辑在于Nebius要快速将AI搜寻工具层整合进其AI云端基础服务Tech Stack，而非从头招募团队自建。Tavily的开源社群、开发者认可度与既有use case成为核心收购价值。这个案例体现当前时代节奏：与其花半年自建，不如溢价收购一个已验证团队以更快deliver给客户。</p><span class="stock-risk">整合风险与文化冲突；2.75亿对一个工具层公司是否溢价过高；业绩里程碑附约执行细节不透明</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">OpenAI</span></div><span class="badge badge-bullish">看多</span></div><p class="stock-analysis">主持人认为OpenAI已大到不能倒、大到不能不IPO，已传出秘密提交IPO申请。主持人推测早期参与OpenAI的VC已将其变现视为板上钉钉，只是变多少的问题。OpenAI作为全村希望，若其崩塌则M7全部跟着下去，因此市场有极强动力维持其上升叙事。主持人同时指出，OpenAI出身的人才形成新一代新创的核心血脉，从OpenAI离职者开创的公司受到VC高度追捧。</p><span class="stock-risk">若IPO前出现重大技术或监管事件影响整体估值；近亲繁殖的创业生态系统可能产生同质化竞争；单一叙事过度集中的系统性风险</span></div>
+<div class="stock-card"><div class="stock-card-header"><div class="stock-tickers"><span class="stock-ticker">AI搜寻/Web Index产业整体</span></div><span class="badge badge-bullish">看多</span></div><p class="stock-analysis">主持人认为AI搜寻的叙事在2026年已与2023-2024年截然不同：核心变量从人类用户转变为AI agent。Agent数量可无限扩展，其搜寻频次与volume远超人类，使Web Index从广告变现工具转型为基础设施服务。爬虫层变化不大，但indexing、查询格式、输出生成与agent orchestration五个环节都面临颠覆性重构。目前全球Web Index高度依赖Google与Microsoft两大节点，AI时代各方都有动机建立独立索引以避免被要挟。主持人认为这是一个兼具市场动能、基础设施壁垒与差异化可能的题目。</p><span class="stock-risk">Google与Microsoft有动机也有能力封锁索引入口；data flywheel护城河并非绝对壁垒如Google反垄断案所示；VC热钱涌入可能导致估值泡沫</span></div>
+      </div>
+    </section>
+
+    <section class="section-block" id="qa">
+      <h2><span class="section-icon">💬</span> Q&amp;A 心法</h2>
+      <div class="qa-list">
+        <p style='color:var(--text-muted)'>本集無 Q&amp;A 記錄</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      逐字稿由 Assembly AI 自動生成，分析由 Claude 產出，僅供個人研究參考，不構成投資建議。
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section-block');
+    const navLinks = document.querySelectorAll('.section-nav a');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const active = document.querySelector(`.section-nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
